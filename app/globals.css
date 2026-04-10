@@ -1,26 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f1e8;
+  --foreground: #18212f;
+  --muted: #5f6877;
+  --border: rgba(24, 33, 47, 0.14);
+  --border-strong: rgba(24, 33, 47, 0.24);
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-soft: rgba(255, 255, 255, 0.56);
+  --surface-strong: #fffdf8;
+  --hero-glow: rgba(13, 148, 136, 0.18);
+  --selection-bg: #18212f;
+  --selection-fg: #f6f1e8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #a1a1aa;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --surface-strong: rgba(255, 255, 255, 0.12);
+  --hero-glow: rgba(168, 85, 247, 0.14);
+  --selection-bg: #ffffff;
+  --selection-fg: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-fg);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image:
+    radial-gradient(circle at top, color-mix(in srgb, var(--hero-glow) 65%, transparent), transparent 38%),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 55%, transparent), transparent 42%);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
 }
