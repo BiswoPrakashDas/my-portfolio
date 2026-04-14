@@ -267,7 +267,7 @@ function PortfolioShell({ scrollToSection, theme, toggleTheme, contentReady = tr
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[radial-gradient(circle_at_top,_var(--hero-glow),_transparent_62%)] opacity-90"></div>
 
       <nav className="fixed inset-x-0 top-4 z-50 px-3 md:px-6">
-        <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 rounded-full border border-[var(--border-strong)] bg-[color-mix(in_srgb,var(--background)_78%,transparent)] px-4 py-3 shadow-[0_14px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl md:px-6">
+        <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 rounded-full border border-[var(--border-strong)]/30 bg-transparent px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.04)] backdrop-blur-sm md:px-6">
           <button
             type="button"
             onClick={() => handleScroll("top")}
