@@ -276,17 +276,17 @@ function PortfolioShell({ scrollToSection, theme, toggleTheme, contentReady = tr
             BISWO
           </button>
 
-          <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)] md:gap-6 md:text-xs md:tracking-[0.18em]">
-            <button type="button" onClick={() => handleScroll("about")} className="transition hover:text-[var(--foreground)]">
+          <div className="flex items-center gap-2 md:gap-3">
+            <button type="button" onClick={() => handleScroll("about")} className="rounded-full border border-[var(--border)] px-3.5 py-1.5 text-[11px] uppercase tracking-[0.16em] font-medium transition duration-300 hover:border-[var(--foreground)] hover:bg-[color-mix(in_srgb,var(--surface)_68%,transparent)] hover:-translate-y-0.5 md:px-4 md:py-2 md:text-xs md:tracking-[0.18em]">
               About
             </button>
-            <button type="button" onClick={() => handleScroll("work")} className="transition hover:text-[var(--foreground)]">
+            <button type="button" onClick={() => handleScroll("work")} className="rounded-full border border-[var(--border)] px-3.5 py-1.5 text-[11px] uppercase tracking-[0.16em] font-medium transition duration-300 hover:border-[var(--foreground)] hover:bg-[color-mix(in_srgb,var(--surface)_68%,transparent)] hover:-translate-y-0.5 md:px-4 md:py-2 md:text-xs md:tracking-[0.18em]">
               Work
             </button>
-            <button type="button" onClick={() => handleScroll("skills")} className="transition hover:text-[var(--foreground)]">
+            <button type="button" onClick={() => handleScroll("skills")} className="rounded-full border border-[var(--border)] px-3.5 py-1.5 text-[11px] uppercase tracking-[0.16em] font-medium transition duration-300 hover:border-[var(--foreground)] hover:bg-[color-mix(in_srgb,var(--surface)_68%,transparent)] hover:-translate-y-0.5 md:px-4 md:py-2 md:text-xs md:tracking-[0.18em]">
               Skills
             </button>
-            <button type="button" onClick={() => handleScroll("contact")} className="transition hover:text-[var(--foreground)]">
+            <button type="button" onClick={() => handleScroll("contact")} className="rounded-full border border-[var(--border)] px-3.5 py-1.5 text-[11px] uppercase tracking-[0.16em] font-medium transition duration-300 hover:border-[var(--foreground)] hover:bg-[color-mix(in_srgb,var(--surface)_68%,transparent)] hover:-translate-y-0.5 md:px-4 md:py-2 md:text-xs md:tracking-[0.18em]">
               Contact
             </button>
             <button
