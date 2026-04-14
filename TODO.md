@@ -3,5 +3,7 @@
 ## Approved Plan Steps:
 - [x] Step 1: Fix hero CTA href targets (`projects` → `#projects`, `contact` → `#contact`)
 - [x] Step 2: Test navigation scrolls to sections
-- [ ] Step 3: Optional - Style navbar as buttons matching CTA design
-- [ ] Step 4: Verify in dev server (`cd my-portfolio && npm run dev`)
+- [x] Step 3: Optional - Style navbar as buttons matching CTA design
+- [x] Step 4: Verify in dev server (`cd my-portfolio && npm run dev`)
+
+## ✅ All tasks completed!
